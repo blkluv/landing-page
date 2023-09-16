@@ -4,6 +4,19 @@ export enum CTAType {
     BasicCTA = "basic_cta",
 }
 
+// Add the Google Analytics code
+const googleAnalyticsCode = `
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PH2ZZGHFEQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PH2ZZGHFEQ');
+  </script>
+`;
+
 const ServerAppConfig = {
     Content: {
         Heading: "Get Paid To Heal X, Y & Z",
