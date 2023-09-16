@@ -1,8 +1,14 @@
 import ClientAppConfig, { SocialType } from "../../../config/client_app_config";
 import { MixpanelTracking } from "../../services/mixpanel.service";
 
+// Define a type for the social object
+interface Social {
+    type: SocialType;
+    url: string;
+}
+
 export default function Socials() {
-    function socialActionHandler(social) {
+    function socialActionHandler(social: Social) { // Add the type annotation here
         MixpanelTracking.getInstance().buttonClicked(
             `social-${social.type}`, 
             { url: social.url }
