@@ -1,16 +1,10 @@
-import { getBooleanEnvVariable } from "./util"
-
-// enum NavBarLinkVisibility {
-//     "Always" = "always",
-//     "MobileOnly" = "mobile-only",
-//     "DesktopOnly" = "desktop-only"
-// }
+import { getBooleanEnvVariable } from "./util";
 
 export enum SocialType {
     Twitter = "twitter",
     Instagram = "instagram",
     LinkedIn = "linkedin",
-    Twitch = "twitch",
+    TikTok = "tiktok",
     Github = "github",
     Stackoverflow = "stackoverflow",
 }
@@ -32,39 +26,30 @@ const ClientAppConfig = {
     Socials: [
         {
             "type": SocialType.Twitter,
-            "url": "https://twitter.com/navidkpr",
+            "url": "https://twitter.com/healxyz",
         },
         {
-            "type": SocialType.Github,
-            "url": "https://github.com/navidkpr",
+            "type": SocialType.TikTok,
+            "url": "https://tiktok.com/@healxyz",
         },
         {
-            "type": SocialType.LinkedIn,
-            "url": "https://linkedin.com/in/navid-pour",
+            "type": SocialType.Instagram,
+            "url": "https://instagram.com/healxyz",
         },
-        // {
-        //     "type": SocialType.Twitch,
-        //     "url": "https://linkedin.com/in/navid-pour",
-        // },
     ],
     NavBarLinks: [
-        // {
-        //     "title": "Watch our demo",
-        //     "url": process.env['NEXT_PUBLIC_DEMO_VIDEO_URL'],
-        // }
-        // {
-        //     "title": "Watch our demo",
-        //     "url": process.env['NEXT_PUBLIC_DEMO_VIDEO_URL'],
-        // }
-        // {
-        //     "title": "Download extension",
-        //     "url": process.env['NEXT_PUBLIC_PRODUCT_URL'],
-        //     // "visible": NavBarLinkVisibility.Always
-        // }
+        {
+            "title": "Watch our demo",
+            "url": process.env['NEXT_PUBLIC_DEMO_VIDEO_URL'],
+        },
+        {
+            "title": "Download extension",
+            "url": process.env['NEXT_PUBLIC_PRODUCT_URL'],
+        },
     ] as Array<{
         "title": string,
         "url": string,
     }>,
 }
 
-export default ClientAppConfig
+export default ClientAppConfig;

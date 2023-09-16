@@ -7,8 +7,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Bunkie',
-  description: 'Github Copilot for documentation',
+  title: 'HealXYZ',
+  description: 'Join the first social media platform with a higher purpose to connect authentic healRs with those who need spiritual healN.',
 }
 
 export default function RootLayout({
